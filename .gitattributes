@@ -1,2 +1,17 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Windows 可执行文件与图片按二进制处理，避免换行转换损坏
+*.exe binary
+*.png binary
+*.ico binary
+*.jpg binary
+
+# 系统/编辑器产生的临时文件，不纳入版本管理
+Thumbs.db
+desktop.ini
+.DS_Store
+~$*
+*.bak
+*.tmp
+*.log

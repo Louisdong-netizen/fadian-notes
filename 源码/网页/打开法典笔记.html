@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>法典笔记 3.6</title>
+<style>
+  :root { --ink:#3a322c; --accent:#8a5a2b; --paper:#faf6ef; --line:#e2d7c6; }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         background:var(--paper); color:var(--ink);
+         font-family:"Songti SC","SimSun","Noto Serif CJK SC",serif; }
+  main { width:min(760px,92vw); padding:40px 0; }
+  h1 { font-size:26px; letter-spacing:.08em; margin:0 0 6px; }
+  .sub { color:#8a7c6c; font-size:13px; margin-bottom:28px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  a.card { display:block; padding:18px 20px; border:1px solid var(--line); border-radius:12px;
+           background:#fffdf8; text-decoration:none; color:inherit; transition:.15s; }
+  a.card:hover { border-color:var(--accent); transform:translateY(-2px); box-shadow:0 6px 18px rgba(138,90,43,.12); }
+  a.card b { display:block; font-size:17px; margin-bottom:4px; }
+  a.card span { color:#8a7c6c; font-size:12px; }
+  .foot { margin-top:26px; font-size:12px; color:#8a7c6c; line-height:1.9; }
+  .foot code { background:#f1e9dc; padding:1px 5px; border-radius:4px; font-size:11px; }
+  .new { display:inline-block; margin-left:6px; padding:1px 6px; border-radius:999px;
+         background:#f6e7ea; color:#8b3652; font-size:11px; vertical-align:middle; }
+</style>
+</head>
+<body>
+<main>
+  <h1>法典笔记 3.6<span class="new">大框对照版</span></h1>
+  <div class="sub">四部法典 · 同一套检索与笔记 · 点条号即弹出两栏条文对照</div>
+
+  <div class="grid">
+    <a class="card" href="法典笔记.html"><b>宪法</b><span>1982 年文本 · 含历年修正对比</span></a>
+    <a class="card" href="法典笔记-civil-code.html"><b>民法典</b><span>1260 条 · 七编 + 附则</span></a>
+    <a class="card" href="法典笔记-criminal-law.html"><b>刑法</b><span>452 条 · 总则 + 分则</span></a>
+    <a class="card" href="法典笔记-cyber-law.html"><b>网络安全法</b><span>81 条 · 2025 年修正</span></a>
+  </div>
+
+  <div class="foot">
+    直接双击上面任一法典即可开始；进入后点标题旁的 <b>▾</b> 或左侧「切换法典」可在四部之间跳转。<br>
+    <b>新增：</b>精读页正文下方的「自动关联」——点任一条号（本法或他法），立刻弹出<b>大框两栏对照</b>：左本法、右关联条文，共同术语高亮，<b>限高 + 两栏各自滚动</b>，长条文也撑不长页面；点「＋采纳」先存进「跨法典关联」，随即弹出同一组对照。<br>
+    <b>「建立关联」现在可以跨法典：</b>弹窗顶部选宪法／刑法／网络安全法，按条文列表选条、即时看正文、写好理由保存，保存后直接打开对照；存下的关联在「相关条文」块里点一下也能对照。<br>
+    关系的来源、可信度分级与已知局限，见同目录《关系说明.md》。<br>
+    笔记保存在本机浏览器中，<b>每部法典分开存放</b>，切换不会互相覆盖。备份与导出见「导出同步」。<br>
+    正文取自国家法律法规数据库（flk.npc.gov.cn）。条文与章节归属请自行核对。
+  </div>
+</main>
+</body>
+</html>

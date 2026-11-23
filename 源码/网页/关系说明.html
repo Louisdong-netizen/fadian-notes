@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>关系说明</title>
+<style>
+  :root { --ink:#3a322c; --ink2:#5b4c40; --muted:#8a7c6c; --accent:#8a5a2b;
+           --paper:#faf6ef; --card:#fffdf8; --line:#e2d7c6; }
+  * { box-sizing:border-box; }
+  html { background:var(--paper); }
+  body { margin:0; color:var(--ink); background:var(--paper);
+          font-family:"Songti SC","SimSun","Noto Serif CJK SC",serif; font-size:16px; line-height:1.95; }
+  .topbar { position:sticky; top:0; z-index:2; display:flex; align-items:center; gap:16px;
+             padding:12px 28px; background:rgba(250,246,239,.94);
+             border-bottom:1px solid var(--line); backdrop-filter:blur(8px); }
+  .topbar a { color:var(--accent); text-decoration:none; font-size:13px; }
+  .topbar a:hover { text-decoration:underline; }
+  .topbar .sep { color:#c8b9a5; }
+  main { width:min(820px,92vw); margin:0 auto; padding:46px 0 96px; }
+  h1 { font-size:30px; line-height:1.4; letter-spacing:.03em; margin:0 0 24px; }
+  h2 { font-size:22px; margin:46px 0 14px; padding-top:14px; border-top:1px solid var(--line); }
+  h3 { font-size:18px; margin:30px 0 10px; color:var(--ink2); }
+  h4 { font-size:16px; margin:24px 0 8px; }
+  p { margin:12px 0; }
+  strong { color:#2f2620; }
+  a { color:var(--accent); }
+  blockquote { margin:18px 0; padding:12px 20px; background:#f4ecdf;
+                border-left:3px solid #c9a877; color:#5c4c3c; }
+  blockquote p { margin:4px 0; }
+  code { font-family:"SF Mono","Menlo",monospace; font-size:.86em; background:#f1e9dc;
+          padding:1px 6px; border-radius:5px; }
+  pre { background:#2f2925; color:#f4ecdf; padding:18px 20px; border-radius:10px;
+         overflow:auto; line-height:1.7; }
+  pre code { background:none; padding:0; color:inherit; font-size:13px; }
+  table { width:100%; border-collapse:collapse; margin:18px 0; font-size:14px;
+           background:var(--card); border:1px solid var(--line); }
+  th, td { padding:9px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { background:#f3eadc; font-weight:600; }
+  tr:last-child td { border-bottom:0; }
+  hr { border:0; border-top:1px solid var(--line); margin:34px 0; }
+  ul, ol { padding-left:1.6em; margin:12px 0; }
+  li { margin:7px 0; }
+  .foot { margin-top:48px; padding-top:18px; border-top:1px solid var(--line);
+           color:var(--muted); font-size:12px; }
+  .app-note { margin:0 0 26px; padding:12px 18px; border:1px solid #e3cfad; border-radius:10px;
+               background:#fbf3e4; color:#775f43; font-size:13px; line-height:1.8; }
+  .app-note b { color:#8a5a2b; }
+</style>
+</head>
+<body>
+<nav class="topbar">
+  <a href="打开法典笔记.html">← 返回首页</a>
+  <span class="sep">·</span>
+  <a href="使用说明.html">使用说明</a>
+  <a href="关系说明.html">关系说明</a>
+</nav>
+<main>
+<div class="app-note"><b>macOS 独立版提示：</b>你正在应用内阅读说明书，无需双击 HTML 文件；在首页选择法典，或用工具栏的「首页」按钮随时返回。</div>
+<h1>法典笔记 3.6 · 条文关系说明</h1>
+<p>3.0 起，每条法条正文下方有「自动关联」面板，分「本法相关」与「其他法典相关」；<strong>3.5 把查看方式改成大框对照</strong>：点条号、或点「＋采纳」，都会弹出两栏条文原文，限高、各自滚动、共同术语高亮。</p>
+<hr>
+<h2>一、线索从哪来（按可信度从高到低）</h2>
+<table><thead><tr>
+<th style="text-align:left">标签</th>
+<th style="text-align:left">怎么来的</th>
+<th style="text-align:left">可信度</th>
+<th style="text-align:left">怎么核对</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align:left"><strong>明文援引</strong></td>
+<td style="text-align:left">条文里写明的「本法第 X 条」</td>
+<td style="text-align:left">最高，法条自证</td>
+<td style="text-align:left">直接用条文原话核对</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>被援引</strong></td>
+<td style="text-align:left">反向：本条被哪一条点名</td>
+<td style="text-align:left">同上</td>
+<td style="text-align:left">同上</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>概念衔接</strong></td>
+<td style="text-align:left">人工锚定的教科书级桥接（如民法典 1034 ↔ 刑法 253）</td>
+<td style="text-align:left">高，但带编辑判断</td>
+<td style="text-align:left">看右列的说明文字</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>同一节 / 同一章 / 同一编</strong></td>
+<td style="text-align:left">编章节结构位置</td>
+<td style="text-align:left">高，但只说明位置相近</td>
+<td style="text-align:left">看目录层级</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>前后条</strong></td>
+<td style="text-align:left">相邻条号</td>
+<td style="text-align:left">高，制度上常连贯</td>
+<td style="text-align:left">读上下条</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>内容相近</strong></td>
+<td style="text-align:left">法律术语共现 + 文本相似度</td>
+<td style="text-align:left">中，是线索不是结论</td>
+<td style="text-align:left">看右列共享术语，再读原文</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>主题接近·推断</strong></td>
+<td style="text-align:left">只有文本相似度，未共享术语</td>
+<td style="text-align:left">低，仅作提示</td>
+<td style="text-align:left">必须自己判断</td>
+</tr>
+</tbody></table>
+<p>程序<strong>不会</strong>替你下结论：面板末尾的说明已写明「供线索用，可能不全或不准」。</p>
+<hr>
+<h2>二、数据规模（本次构建实测）</h2>
+<table><thead><tr>
+<th style="text-align:left">法典</th>
+<th style="text-align:left">条文</th>
+<th style="text-align:left">本法内部线索</th>
+<th style="text-align:left">跨法典线索</th>
+<th style="text-align:left">关系类型</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align:left">宪法</td>
+<td style="text-align:left">156</td>
+<td style="text-align:left">777</td>
+<td style="text-align:left">220</td>
+<td style="text-align:left">同章 414 · 前后条 358 · 内容相近 112 · 推断 86 · 概念 27</td>
+</tr>
+<tr>
+<td style="text-align:left">民法典</td>
+<td style="text-align:left">1,260</td>
+<td style="text-align:left">6,319</td>
+<td style="text-align:left">1,349</td>
+<td style="text-align:left">同章 2,576 · 前后条 2,467 · 内容相近 1,350 · 同节 977 · 概念 134 · 援引 59 · 被援引 59 · 推断 46</td>
+</tr>
+<tr>
+<td style="text-align:left">刑法</td>
+<td style="text-align:left">452</td>
+<td style="text-align:left">2,255</td>
+<td style="text-align:left">632</td>
+<td style="text-align:left">前后条 848 · 内容相近 627 · 同节 617 · 同章 533 · 概念 95 · 援引 56 · 被援引 56 · 推断 55</td>
+</tr>
+<tr>
+<td style="text-align:left">网络安全法</td>
+<td style="text-align:left">81</td>
+<td style="text-align:left">403</td>
+<td style="text-align:left">173</td>
+<td style="text-align:left">内容相近 160 · 前后条 157 · 同章 157 · 同节 44 · 援引 20 · 被援引 20 · 推断 11 · 概念 7</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>合计</strong></td>
+<td style="text-align:left"><strong>1,949</strong></td>
+<td style="text-align:left"><strong>9,754</strong></td>
+<td style="text-align:left"><strong>2,376</strong></td>
+<td style="text-align:left">共 <strong>12,130</strong> 条线索</td>
+</tr>
+</tbody></table>
+<p>「概念衔接」= 人工锚定，共 <strong>137 组</strong>（双向计 266 条），每条都有可读的理由，例如：</p>
+<ul><li>民法典 1034（个人信息）↔ 刑法 253（侵犯公民个人信息罪）、宪法 40（通信自由和通信秘密）</li><li>民法典 187（责任竞合）↔ 刑法 36（民事赔偿优先）</li><li>民法典 1165（过错责任）↔ 刑法 14、15（故意与过失）</li><li>刑法 246（侮辱诽谤）↔ 宪法 38（人格尊严）、宪法 35（言论自由）</li></ul>
+<p><strong>并非每条都有跨法典线索</strong>：民法典有 456 条、刑法有 117 条、宪法 40 条找不到可靠的跨法域关联，此时面板会显示「未找到可靠的跨法典关联」，并提示用手动关联。这是有意为之——宁缺勿滥（例如物权编的技术性条文，其他三部法典里本来就没有对应制度）。</p>
+<hr>
+<h2>三、怎么用</h2>
+<ol><li>双击 <code>打开法典笔记.html</code>，或直接双击任一部法典。</li><li>进入「法条精读」，搜索条号（如「第一千零三十四条」）。</li><li>正文下方的「自动关联」：<ul><li>点<strong>本法相关</strong>的条号：弹出大框对照（本条 ↔ 那一条）；</li><li>点<strong>其他法典相关</strong>的「《刑法》第二百五十三条」：同样弹出对照，左本法、右对方；</li><li>两栏各自滚动，<code>Esc</code> 或「关闭」退出；</li><li>对照底部点「在刑法中打开 ↗」：跳到对方页面那一条；</li><li>点「＋采纳」：先存入「跨法典关联」，<strong>随即弹出同一组对照</strong>，按钮变「已采纳 ✓」。</li></ul></li><li>笔记照旧分开存放，四部法典互不覆盖。</li></ol>
+<blockquote><p>提示：每条法条本身就有固定网址（<code>#a1034</code> 或 <code>#ref=第一千零三十四条</code>），可以直接发给别人。</p></blockquote>
+<hr>
+<h2>四、条文对照：怎么读</h2>
+<p><strong>3.5 起，点条号或点「＋采纳」，都直接弹出大框对照</strong>（不再是页内小条）：</p>
+<pre><code>┌ 条文对照 ─────────────────────────── 左：本法 · 右：关联条文 ── 关闭 ┐
+│ 对照 · 概念衔接 · 共同术语：个人信息                                  │
+│ 民法典 第一千零三十四条        │ 刑法 第二百五十三条                  │
+│ 3 款 · 151 字                  │ 4 款 · 223 字                        │
+│ 自然人的「个人信息」受法律保护…│ 之一 违反国家有关规定…「个人信息」…  │
+│                             ↑ 两栏各自滚动，框体限高            │
+│ [＋采纳为关联] [在刑法中打开 ↗]                        两栏各自滚动·Esc 关闭 │
+└──────────────────────────────────────────────────────────────┘</code></pre>
+<ul><li><strong>限高 + 内部滚动</strong>：框体最高约 90% 屏高，每栏最高 58% 屏高；长条文（如刑法 383 条量刑）只在栏内滚动，页面本身不被撑长。</li><li><strong>点「＋采纳」的流程</strong>：先写入「跨法典关联」→ 随即弹出同一组对照 → 按钮变「已采纳 ✓」。也就是说，采纳这个动作本身就会让你看到两条原文，而不是只留一个名字。存下的记录会在正文末尾的「相关条文」块里，<strong>点它同样直接弹出对照</strong>；旁边的「＋ 新增跨法典关联」用来手动补充。</li><li><strong>「建立关联」也能跨法典</strong>：正文底部的「建立关联」弹窗顶部多了一个「法典」下拉，选宪法／刑法／网络安全法后，可按完整条文列表选条、即时看到对方正文、写好理由保存；保存后同样立刻弹出对照，记录进入「相关条文」与「跨法典关联」页。选「本法典」时仍是原来的同法典关联。</li><li><strong>误建的关联可以逐条撤销</strong>：「相关条文」块里每条右边有「撤销」，只删这一对；同一法条与其他条文的关联保留。撤销前会弹窗写明将移除哪一条、还剩几条，确认后才执行；原文、笔记、材料库不受影响。</li><li><strong>栏头固定</strong>：向下滚动时，「民法典 第 X 条 / 3 款 · 151 字」停在栏顶，不会跟丢。</li></ul>
+<p>读法建议：</p>
+<ol><li><strong>先看共同术语</strong>（黄色底纹）——它说明两条为什么被连起来。若无底纹，说明这条只是结构相邻或措辞相近，含金量低。</li><li><strong>再看款数</strong>——一边 1 款、一边 5 款，通常意味着「原则—具体」的关系，而不是平行关系。</li><li><strong>最后自己判断</strong>：程序只负责把两条摆在一起，是否成立、成立到什么程度，是读的人的事。</li></ol>
+<p>跨法典对照需要在页面里内嵌对方条文，实测代价很小（去重后）：宪法 +33 KB、民法典 +117 KB、刑法 +69 KB、网安法 +31 KB，四页合计约 0.24 MB。因此仍然是<strong>单文件、双击即用、不联网</strong>。</p>
+<h2>五、刑法文本状态与一处必须知道的缺陷</h2>
+<p><strong>已合并《刑法修正案（十二）》</strong>（2023-12-29 通过，2024-03-01 施行）。按最高人民检察院公布的新华社稿，第 165、166、387、391、393 条已更新正文；刑法页的版本年份也随之标为 2024 年文本。</p>
+<p><strong>必须说明的缺陷</strong>：本页刑法正文来自条文库，而该库对带「之一」的条文有编号错位——<strong>第 X 条之一的内容被放到了第 X 条的位置，第 X 条本体没有收录</strong>。已核实的例子：第 133 条位置显示的是 133 条之一（危险驾驶罪），第 253 条位置显示的是 253 条之一（侵犯公民个人信息罪），第 169、390 条同理。</p>
+<p>修正案（十二）恰好涉及 169、390 两条，因此这两条在本页无法直接替换正文，改以条上方「文本说明」给出修正后的新增款项；其余 5 条（165、166、387、391、393）已按官方文本替换。</p>
+<p>彻底修好需要从官方完整文本重建刑法页（约 480 个条文，含全部「之一」）。这是下一步最该做的事，涉及约 30 处编号，工作量约 1 天。</p>
+<h2>六、跨法典检索</h2>
+<p>「自动关联」面板右上角有「<strong>跨法典检索</strong>」：输入一个关键词（如「个人信息」「违约金」「正当防卫」），一次在宪法、民法典、刑法、网络安全法四部法典的条文正文中查找，按命中次数排序，显示条文号与上下文片段，点「打开 ↗」跳到那一条。</p>
+<p>四部法典的条文正文都内嵌在页面里，所以检索是<strong>本地即时</strong>的，不联网、不调模型。</p>
+<h2>七、已知局限</h2>
+<ol><li>关系是<strong>算法 + 人工锚定</strong>的产物，不是官方发布的「法条关联」。涉及课程论文、竞赛提交时，请以条文原文为准。</li><li>未覆盖司法解释、地方性法规、其他部委规章；跨法域线索只在宪法、民法典、刑法、网络安全法四部之间生成。</li><li>语义关系偏向「用词相近」，对立法目的、体系解释层面的联系只能提供线索。</li><li>刑法页存在上文第五节的「之一」编号缺陷，涉及其余「之一」条文时请核对官方文本。</li></ol>
+<hr>
+<h2>六、重新生成</h2>
+<p>工程位置：<code>Documents\deepseek-harness\default-workspace\fadian-notes-mcp\</code></p>
+<pre><code class="language-bash">node build-codes.mjs      # 重新计算关系并生成四页（写入 ./build）
+node verify-rel3.mjs      # 输出每页的关系统计，核对数量
+node cdp-rel3.mjs         # 无头浏览器自检 + 截图</code></pre>
+<ul><li><code>relations.mjs</code>：关系算法（明文引用 / 人工锚定 / 结构 / 术语共现 / 相似度）</li><li><code>build-codes.mjs</code>：把算法结果写进每部法典页面的数据块</li><li><code>template/base.html</code>：页面模板与「自动关联」面板</li></ul>
+<p>改词的权重、想加锚定对，都在 <code>relations.mjs</code> 顶部的 <code>ANCHORS</code> 与 <code>TERMS</code> 里。</p>
+<div class="foot">法典笔记 3.6 · macOS 独立版 · 本页内容离线保存在应用内</div>
+</main>
+</body>
+</html>
