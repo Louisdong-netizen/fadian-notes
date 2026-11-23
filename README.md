@@ -6,6 +6,14 @@
 
 ## 一、我要用（下载即走）
 
+> **仓库地址**：<https://github.com/Louisdong-netizen/fadian-notes>
+> **成品下载页（Release）**：<https://github.com/Louisdong-netizen/fadian-notes/releases/latest>
+
+两种下载方式，任选一个：
+
+- **省事版**：点上面「成品下载页」→ 在 `Assets` 里点 `fadian-notes-windows-portable-1.0.0.exe`
+- **直接版**：点下面这个文件 → 右上角下载图标
+
 1. 点这里下载最新版：**[fadian-notes-windows-portable-1.0.0.exe](./fadian-notes-windows-portable-1.0.0.exe)**（约 24.7 MB）
 2. 双击运行。第一次会被 Windows 拦一下（因为程序没买数字签名），点 **更多信息 → 仍要运行** 即可。
 3. 详细图解见 👉 **[使用说明书.md](./使用说明书.md)** 第 1 节。
