@@ -1,0 +1,59 @@
+法典笔记 3.8 · macOS 版
+构建日期：2026-11-05
+
+一、软件信息
+  软件名称：法典笔记
+  版本号：3.8
+  平台：macOS（Universal，Apple Silicon + Intel）
+  安装包：法典笔记-3.8-macOS.dmg
+  内容：宪法、民法典、刑法、网络安全法四部法典，以及条文检索、笔记、关联、材料库、导出等功能。
+
+二、macOS 系统要求
+  · macOS 13 Ventura 或更高版本
+  · Apple Silicon 或 Intel Mac
+  · 约 100 MB 可用磁盘空间
+
+三、安装步骤（DMG）
+  1. 双击「法典笔记-3.8-macOS.dmg」挂载磁盘映像。
+  2. 把「法典笔记」拖到「Applications / 应用程序」文件夹。
+  3. 从「应用程序」中打开「法典笔记」。
+  4. 首次打开后，笔记会保存在本机；卸载 App 不会自动删除笔记。
+
+  如使用 PKG：双击「法典笔记-3.8-macOS.pkg」，按向导安装到「应用程序」。
+
+四、未签名提示
+  本安装包使用本地 ad-hoc 签名，未使用 Apple Developer ID，也未做公证（notarization）。
+  · 首次打开可能出现“无法验证开发者”提示。
+  · 处理方式：右键点「法典笔记」→「打开」→ 再点「打开」；或到「系统设置 → 隐私与安全性」点「仍要打开」。
+  · 如企业环境禁止未签名 App，需要使用 Developer ID 签名并公证后再分发。
+
+五、构建命令与产物来源
+  工程位置：
+    /Users/xujiaming/Documents/deepseek-harness/default-workspace/fadian-notes-mac
+
+  构建环境：
+    · macOS 27.2 arm64
+    · Swift 6.4.2（Command Line Tools）
+    · 通用二进制：arm64 + x86_64，最低 macOS 13.0
+
+  构建命令：
+    cd /Users/xujiaming/Documents/deepseek-harness/default-workspace/fadian-notes-mac
+    ./build.sh
+
+  产物：
+    · dist/法典笔记-3.8-macOS.dmg
+    · dist/法典笔记-3.8-macOS.pkg
+    · DMG 内为「法典笔记.app」和 Applications 快捷方式
+
+  页面内容与 Windows 3.8 版来自同一份网页资源；macOS 外壳为 Swift + AppKit + WKWebView。
+
+六、已知限制
+  · Ad-hoc 签名、未公证，Gatekeeper 可能提示。
+  · 仅提供 macOS 版；Windows 版是独立安装包。
+  · 未配置自动更新；升级需重新下载安装包。
+  · 未在 macOS 上运行 Windows 安装包，也不做 Windows 运行时验证。
+  · 刑法页保留原始文本中的“之一”编号缺陷，详见应用内《关系说明》。
+  · 笔记保存在本机，不联网、不上传；跨设备迁移请使用“导出同步”的 JSON/Markdown 导出。
+
+七、SHA256
+  见发布包根目录 checksums.txt。

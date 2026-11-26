@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>使用说明</title>
+<style>
+  :root { --ink:#3a322c; --ink2:#5b4c40; --muted:#8a7c6c; --accent:#8a5a2b;
+           --paper:#faf6ef; --card:#fffdf8; --line:#e2d7c6; }
+  * { box-sizing:border-box; }
+  html { background:var(--paper); }
+  body { margin:0; color:var(--ink); background:var(--paper);
+          font-family:"Songti SC","SimSun","Noto Serif CJK SC",serif; font-size:16px; line-height:1.95; }
+  .topbar { position:sticky; top:0; z-index:2; display:flex; align-items:center; gap:16px;
+             padding:12px 28px; background:rgba(250,246,239,.94);
+             border-bottom:1px solid var(--line); backdrop-filter:blur(8px); }
+  .topbar a { color:var(--accent); text-decoration:none; font-size:13px; }
+  .topbar a:hover { text-decoration:underline; }
+  .topbar .sep { color:#c8b9a5; }
+  main { width:min(820px,92vw); margin:0 auto; padding:46px 0 96px; }
+  h1 { font-size:30px; line-height:1.4; letter-spacing:.03em; margin:0 0 24px; }
+  h2 { font-size:22px; margin:46px 0 14px; padding-top:14px; border-top:1px solid var(--line); }
+  h3 { font-size:18px; margin:30px 0 10px; color:var(--ink2); }
+  h4 { font-size:16px; margin:24px 0 8px; }
+  p { margin:12px 0; }
+  strong { color:#2f2620; }
+  a { color:var(--accent); }
+  blockquote { margin:18px 0; padding:12px 20px; background:#f4ecdf;
+                border-left:3px solid #c9a877; color:#5c4c3c; }
+  blockquote p { margin:4px 0; }
+  code { font-family:"SF Mono","Menlo",monospace; font-size:.86em; background:#f1e9dc;
+          padding:1px 6px; border-radius:5px; }
+  pre { background:#2f2925; color:#f4ecdf; padding:18px 20px; border-radius:10px;
+         overflow:auto; line-height:1.7; }
+  pre code { background:none; padding:0; color:inherit; font-size:13px; }
+  table { width:100%; border-collapse:collapse; margin:18px 0; font-size:14px;
+           background:var(--card); border:1px solid var(--line); }
+  th, td { padding:9px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { background:#f3eadc; font-weight:600; }
+  tr:last-child td { border-bottom:0; }
+  hr { border:0; border-top:1px solid var(--line); margin:34px 0; }
+  ul, ol { padding-left:1.6em; margin:12px 0; }
+  li { margin:7px 0; }
+  .foot { margin-top:48px; padding-top:18px; border-top:1px solid var(--line);
+           color:var(--muted); font-size:12px; }
+  .app-note { margin:0 0 26px; padding:12px 18px; border:1px solid #e3cfad; border-radius:10px;
+               background:#fbf3e4; color:#775f43; font-size:13px; line-height:1.8; }
+  .app-note b { color:#8a5a2b; }
+</style>
+</head>
+<body>
+<nav class="topbar">
+  <a href="打开法典笔记.html">← 返回首页</a>
+  <span class="sep">·</span>
+  <a href="使用说明.html">使用说明</a>
+  <a href="关系说明.html">关系说明</a>
+</nav>
+<main>
+<div class="app-note"><b>macOS 独立版提示：</b>你正在应用内阅读说明书，无需双击 HTML 文件；在首页选择法典，或用工具栏的「首页」按钮随时返回。</div>
+<h1>法典笔记 3.8</h1>
+<p>2.0 的界面、检索、笔记全部保留；3.0 起在每条法条下面加「<strong>自动关联</strong>」面板；<strong>3.5 把对照做成大框</strong>：点条号或点「＋采纳」，立刻弹出两栏条文对照，限高、各自内部滚动。</p>
+<h2>怎么用</h2>
+<ol><li>双击 <code>打开法典笔记.html</code>（或直接双击任一部法典页面）。</li><li>进入后点标题旁的 <code>▾</code>，或左侧「切换法典」，在四部法典之间切换。</li><li>检索：顶部搜索框输入条号或词句，如「第一千零三十四条」「违约金」。</li><li><strong>看关系、看对照</strong>：精读页正文下方有「自动关联」——<ul><li>点「本法相关」或「其他法典相关」的<strong>条号</strong>：弹出大框对照，左本法、右关联条文，共同术语高亮；</li><li>两栏<strong>各自滚动</strong>，框体限高，长条文也不会把页面撑长；<code>Esc</code> 或「关闭」退出；</li><li>「在刑法中打开 ↗」：跳到对方页面那一条；</li><li>「＋采纳」：<strong>先存入「跨法典关联」，随即弹出同一组对照</strong>，按钮变成「已采纳 ✓」，你可以对着原文继续读。</li></ul></li><li><strong>「相关条文」块</strong>（正文末尾那个可折叠块）：这里列的是你已经存下的关联——<ul><li>点条目（如「刑法第二百五十三条」）<strong>直接弹出同一套对照</strong>，不必再回上面找；</li><li>每条右边有「<strong>撤销</strong>」：只撤销这一条。比如 A 同时连了 B 和 C，撤销 A–C 之后 A–B 照旧保留；弹窗会写明要移除哪一条，确认后才删；</li><li>在精读页右上角点「<strong>建立关联</strong>」，可手动新增一条（写清法典、条文、理由）；</li><li>「复制本条网址」可把这条法条的固定地址发给别人。</li></ul></li><li><strong>「建立关联」（精读页右上角）</strong>：现在可以跨法典建关联——<ul><li>弹窗顶部新增「<strong>法典</strong>」下拉：本法典（民法典）／宪法／刑法／网络安全法；</li><li>选其他法典后，「关联到」会换成那部法典的完整条文列表（宪法 143 条、刑法 452 条、网安法 81 条），下方即时显示所选条文的正文；</li><li>写好关联理由，点「保存关联」——<strong>直接存成跨法典关联，并立刻打开两栏对照</strong>；</li><li>选「本法典」时，仍然是原来的同法典关联行为（按年份、按条号、可点选字句）。</li></ul></li><li><strong>跨法典检索</strong>：精读页「自动关联」右上角点「跨法典检索」，输入一个关键词（如「个人信息」「违约金」），一次在四部法典里查找条文正文，显示条文号 + 片段，点「打开 ↗」跳过去。</li><li><strong>采纳后补一句判断</strong>：点「＋采纳」弹出对照时，底部有「补一句你的判断」，写一句自己的理由保存，会替换系统自动填的说明，并显示在「相关条文」里。</li><li>笔记：精读视图里可写批注、编辑条旨、加记忆卡片；笔记存在本机浏览器，<strong>每部法典一套，互不覆盖</strong>。</li><li>备份：左侧「导出同步」，可导出 JSON 备份或关联到网盘文件夹。</li></ol>
+<h2>各法典情况</h2>
+<table><thead><tr>
+<th style="text-align:left">法典</th>
+<th style="text-align:left">条文数</th>
+<th style="text-align:left">版本</th>
+<th style="text-align:left">状态</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align:left">宪法</td>
+<td style="text-align:left">156 个阅读单元</td>
+<td style="text-align:left">1982 年文本，含历年修正对比</td>
+<td style="text-align:left">原样保留</td>
+</tr>
+<tr>
+<td style="text-align:left">民法典</td>
+<td style="text-align:left">1260 条</td>
+<td style="text-align:left">2020 年通过，2021-01-01 施行</td>
+<td style="text-align:left">新增关系</td>
+</tr>
+<tr>
+<td style="text-align:left">刑法</td>
+<td style="text-align:left">452 条</td>
+<td style="text-align:left"><strong>已合并《刑法修正案（十二）》</strong>（2024-03-01 施行）</td>
+<td style="text-align:left">新增关系</td>
+</tr>
+<tr>
+<td style="text-align:left">网络安全法</td>
+<td style="text-align:left">81 条</td>
+<td style="text-align:left">2025 年修正，2026-01-01 施行</td>
+<td style="text-align:left">新增关系</td>
+</tr>
+</tbody></table>
+<p>关系共 12,130 条线索：本法内部 9,754 条、跨法典 2,376 条，其中人工锚定 137 组。构成、可信度分级与核对方法见同目录的《关系说明.md》。</p>
+<blockquote><p><strong>刑法页已知缺陷</strong>：「之一」条文（如 133 条之一 危险驾驶罪）在条文库里被放到了本条位置，本条本体未收录。169、390 条因此只能以条上提示给出修正内容。详见《关系说明.md》第五节。</p></blockquote>
+<h2>必须知道的几个限制</h2>
+<ul><li><strong>刑法未包含 2024 年施行的《刑法修正案（十二）》</strong>。涉及第 165、166、169、390—393 条的页面已加红色提示，引用请以官方最新文本为准。</li><li><strong>条旨留空</strong>。正文和条号是完整的，每条的简短标题（条旨）需要你在阅读时自行补写或校对。</li><li><strong>关系是线索，不是结论</strong>。「内容相近」「主题接近·推断」由程序算出，可能不准；「明文援引」「概念衔接」才是硬证据。</li><li>并非每条都有跨法典线索；没有时面板会直接说明，可用「关联其他法典的条文」手动建立。</li><li><strong>章节归属已按条文位置整理</strong>，编、章、节的边界与法条实际范围一致；仍建议抽查。</li><li><strong>与桌面上原来的「法典笔记」exe 是两套笔记</strong>，已有笔记不会自动出现在这里，可用「导出同步」的 JSON 备份手工迁移。</li><li>这是<strong>文件夹版</strong>，不是重新打包的 exe。</li></ul>
+<h2>想再加一部法典？</h2>
+<p>数据层是开放的：<code>codes</code> 列表里加一条 + 同目录放一个页面即可。构建脚本在 <code>Documents\deepseek-harness\default-workspace\fadian-notes-mcp\build-codes.mjs</code>，关系算法在 <code>relations.mjs</code>。</p>
+<h2>数据来源</h2>
+<p>正文取自国家法律法规数据库（flk.npc.gov.cn），经条文库批量提取，条号与条文一一对应。 关系由本地离线脚本计算，<strong>不联网、不调用任何模型</strong>。 源代码与构建脚本在 <code>Documents\deepseek-harness\default-workspace\fadian-notes-mcp\</code>。</p>
+<div class="foot">法典笔记 3.8 · macOS 独立版 · 本页内容离线保存在应用内</div>
+</main>
+</body>
+</html>
